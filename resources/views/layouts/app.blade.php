@@ -14,6 +14,9 @@
     <meta charset="utf-8" />
     <title>Atrakana Ongkir - Website Cek Ongkir</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{-- script untuk tampil di NGROK --}}
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    {{-- end script untuk tampil di NGROK --}}
     <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
     <meta content="Coderthemes" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -157,8 +160,8 @@
                 </li>
 
                 <li class="dropdown notification-list">
-                    <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect" data-toggle="dropdown" href="#"
-                        role="button" aria-haspopup="false" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect" data-toggle="dropdown"
+                        href="#" role="button" aria-haspopup="false" aria-expanded="false">
                         <img src="{{ asset('adminto/dist/assets/images/users/user-1.jpg') }}" alt="user-image"
                             class="rounded-circle">
                         <span class="pro-user-name ml-1">
@@ -988,7 +991,7 @@
                         <div class="col-md-6">
                             <script>
                                 document.write(new Date().getFullYear());
-                              </script>
+                            </script>
                             {{-- 2016 - 2019 &copy; Adminto theme by <a href="">Coderthemes</a> --}}
                             &copy; Adminto theme by <a href="">Coderthemes</a>
                         </div>
