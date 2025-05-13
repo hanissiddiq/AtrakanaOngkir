@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 13, 2025 at 07:21 AM
+-- Generation Time: May 13, 2025 at 11:20 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.28
 
@@ -710,6 +710,14 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(2, 'Administrator-Apps', 'admin@atrakana.com', '2025-05-13 01:20:20', '$2y$10$NX8TJoYEU1FLSWm8thq8.Or9nJrpl5E9TSWPnLaA/LEnrXkvxP2lq', NULL, '2025-05-13 01:20:20', '2025-05-13 01:20:20'),
+(3, 'safarina', 'safarina@gmail.com', NULL, '$2y$10$42qvj/qJydejblXHHxC8quxN/5RNNYhF80EQI.Pi9RN2Hp4lRZwY.', NULL, '2025-05-13 03:06:44', '2025-05-13 03:06:44');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -809,7 +817,7 @@ ALTER TABLE `provinces`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
