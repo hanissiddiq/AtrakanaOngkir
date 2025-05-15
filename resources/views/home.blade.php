@@ -20,7 +20,7 @@
                     </div>
                     <div class="card-body">
                         {{-- <i class="fas fa-truck" style="font-size:80px "></i> --}}
-                        <img src="{{ asset('storage/images/Logo-Container_Truck.png') }}" alt="Gambar" width="180">
+                        <img src="{{ asset('images/Logo-Container_Truck.png') }}" alt="Gambar" width="180">
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>Cek Ongkir Lebih Mudah</li>
                         </ul>
@@ -35,7 +35,7 @@
                     </div>
                     <div class="card-body">
                         {{-- <i class="fas fa-box" style="font-size:80px "></i> --}}
-                        <img src="{{ asset('storage/images/Logo_Package_Box.png') }}" alt="Gambar" width="180">
+                        <img src="{{ asset('images/Logo_Package_Box.png') }}" alt="Gambar" width="180">
 
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>Cek Lokasi Paket</li>
@@ -51,7 +51,7 @@
                     </div>
                     <div class="card-body">
                         {{-- <i class="fas fa-plane-departure" style="font-size:80px "></i> --}}
-                        <img src="{{ asset('storage/images/Logo_Abroad_Package.png') }}" alt="Gambar" width="180">
+                        <img src="{{ asset('images/Logo_Abroad_Package.png') }}" alt="Gambar" width="180">
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>Cek Ongkir Pengiriman Internasional</li>
                         </ul>
@@ -73,21 +73,24 @@
                                 </h5>
                                 <div class="form-group">
                                     <label for="">Provinsi</label>
-                                    <select name="provinsi_pengirim" id="" class="form-control">
-                                        <option value="">-</option>
+                                    <select name="origin_province" id="" class="form-control">
+                                        <option value="">=== Nama Provinsi ===</option>
+                                        @foreach ($province as $key => $value)
+                                            <option value="{{ $key }}">{{ $value }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="">Kota/Kabupaten</label>
                                     <select name="kotakab_pengirim" id="" class="form-control">
-                                        <option value="">-</option>
+                                        <option value="">=== Nama Kabupaten ===</option>
                                     </select>
                                 </div>
                                 <h5 class="text-muted">Tujuan Pengirim :</h5>
                                 <div class="form-group">
                                     <label for="">Kota/Kabupaten</label>
                                     <select name="kotakab_pengirim" id="" class="form-control">
-                                        <option value="">-</option>
+                                        <option value="">=== Nama Kota ===</option>
                                     </select>
                                 </div>
                             </div>

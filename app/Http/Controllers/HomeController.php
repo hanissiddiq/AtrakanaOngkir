@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Province;
 
 class HomeController extends Controller
 {
@@ -25,7 +26,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $province = $this->getProvince();
+        return view('home',compact('province'));
     }
 
     /**
@@ -93,4 +95,8 @@ class HomeController extends Controller
     {
         //
     }
+
+    public function getProvince()
+    {
+return Province::pluck('title','code');    }
 }
