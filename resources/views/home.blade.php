@@ -82,14 +82,15 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="">Kota/Kabupaten</label>
-                                    <select name="kotakab_pengirim" id="" class="form-control">
+                                    <select name="origin_city" id="" class="form-control">
                                         <option value="">=== Nama Kabupaten ===</option>
+
                                     </select>
                                 </div>
                                 <h5 class="text-muted">Tujuan Pengirim :</h5>
                                 <div class="form-group">
                                     <label for="">Kota/Kabupaten</label>
-                                    <select name="kotakab_pengirim" id="" class="form-control">
+                                    <select name="destination_city" id="" class="form-control">
                                         <option value="">=== Nama Kota ===</option>
                                     </select>
                                 </div>

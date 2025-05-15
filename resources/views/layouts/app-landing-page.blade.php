@@ -30,6 +30,8 @@
             margin: 20px 0;
         }
     </style>
+    @vite(['resources/css/app.css', 'resources/js/app.js','resources/js/ongkir.js'])
+
 </head>
 
 <body class="authentication-bg">
@@ -132,7 +134,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
 
-   
+
 
 
 

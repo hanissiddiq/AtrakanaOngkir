@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Province;
+use App\Models\City;
 
 class HomeController extends Controller
 {
@@ -17,8 +18,6 @@ class HomeController extends Controller
     //     $this->middleware('auth');
     // }
 
-
-
     /**
      * Display a listing of the resource.
      *
@@ -27,7 +26,7 @@ class HomeController extends Controller
     public function index()
     {
         $province = $this->getProvince();
-        return view('home',compact('province'));
+        return view('home', compact('province'));
     }
 
     /**
@@ -98,5 +97,11 @@ class HomeController extends Controller
 
     public function getProvince()
     {
-return Province::pluck('title','code');    }
+        return Province::pluck('title', 'code');
+    }
+
+    public function getCities($id)
+    {
+        return City::where('province_code', $id)->pluck('title', 'code');
+    }
 }

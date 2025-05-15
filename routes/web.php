@@ -26,5 +26,6 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->middleware(['auth', 'verified'])->name('home');
+Route::get('/api/province/{id}/cities', [HomeController::class, 'getCities'])->name('province.cities');
 
 
